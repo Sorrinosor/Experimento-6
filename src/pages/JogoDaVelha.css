@@ -1,0 +1,61 @@
+.container-jogo {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.casa {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  font-weight: bold;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.casa:hover {
+  background-color: #f0f0f0;
+}
+
+.casa.x {
+  color: #d9534f; /* Vermelho para X */
+}
+
+.casa.o {
+  color: #0275d8; /* Azul para O */
+}
+
+.vencedor {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #28a745;
+}
+
+.reiniciar {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.reiniciar:hover {
+  background-color: #555;
+}
